@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest Reminder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="tabs">
+        <button class="tab-button" data-tab="platforms">Select Platforms</button>
+        <button class="tab-button" data-tab="contests">Upcoming Contests</button>
+        <button class="tab-button" data-tab="notifications">Notifications</button>
+    </div>
+
+    <div id="platforms" class="tab-content">
+        <h2>Select Platforms</h2>  
+        <label>
+            <span><img src="images/codeforces.png" alt="Codeforces" class="platform-logo">Codeforces</span>
+            <input type="checkbox" id="codeforces">
+        </label>
+        <label>
+            <span><img src="images/codechef.png" alt="Codechef" class="platform-logo">Codechef</span>
+            <input type="checkbox" id="codechef">
+        </label>
+        <label>
+            <span><img src="images/leetcode.png" alt="Leetcode" class="platform-logo">Leetcode</span>
+            <input type="checkbox" id="leetcode">
+        </label>
+        <label>
+            <span><img src="images/GeeksforGeeks.png" alt="GeeksforGeeks" class="platform-logo">GeeksforGeeks</span>
+            <input type="checkbox" id="gfg">
+        </label>
+        <label>
+            <span><img src="images/codingNinja.png" alt="codingninjas" class="platform-logo">Coding Ninjas</span>
+            <input type="checkbox" id="codingninjas">
+        </label>
+        <label>
+            <span><img src="images/HackerEarth.png" alt="Hackerearth" class="platform-logo">HackerEarth</span>
+            <input type="checkbox" id="hackerearth">
+        </label>
+        <button id="save-platforms">Save Platforms</button>
+    </div>
+
+    <div id="contests" class="tab-content" style="display:none;">
+        <h2>Upcoming Contests</h2>
+        <div id="contestList"></div>
+    </div>
+
+    <div id="notifications" class="tab-content" style="display:none;">
+        <h2>Scheduled Notifications</h2>
+        <div id="notificationList"></div>
+    </div>
+
+    <script src="popup1.js"></script>
+</body>
+</html>

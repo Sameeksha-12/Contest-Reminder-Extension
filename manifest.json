@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Contest Reminder",
+    "version": "1.0",
+    "description": "Reminds users of upcoming coding contests.",
+    "permissions": [
+      "storage", 
+      "notifications", 
+      "alarms",
+      "activeTab",
+      "background"
+    ],
+    "host_permissions": [
+      "https://clist.by/*"
+    ],
+    "minimum_chrome_version": "93",
+    "background": {
+      "service_worker": "background1.js",
+      "type": "module"
+    },
+    "action": {
+      "default_popup": "popup1.html"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+  }
+  
